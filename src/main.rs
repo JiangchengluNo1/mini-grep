@@ -13,11 +13,8 @@ struct Args {
     #[arg(short = 'q', long)]
     query: String,
     /// The above and behind number of the lines of aim content
-    #[arg(short = 'n' , long, default_value_t = 0)]
+    #[arg(short = 'n' , long, default_value_t = 5)]
     number: usize,
-    /// See more content
-    #[arg(short = 'a', long, default_value_t = true)]
-    all: bool,
 }
 
 fn main() {
